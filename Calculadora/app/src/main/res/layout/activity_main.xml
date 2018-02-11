@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hola"
+        android:textSize="60dp"
+        android:gravity="right"
+        android:id="@+id/screen"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/uno"
+                android:onClick="numberInput"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/dos"
+                android:onClick="numberInput"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/tres"
+                android:onClick="numberInput"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/mas"
+                android:onClick="operatorInput"
+                android:text="+" />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/cuatro"
+                android:onClick="numberInput"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/cinco"
+                android:onClick="numberInput"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/seis"
+                android:onClick="numberInput"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/menos"
+                android:onClick="operatorInput"
+                android:text="-" />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/siete"
+                android:onClick="numberInput"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/ocho"
+                android:onClick="numberInput"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/nueve"
+                android:onClick="numberInput"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/por"
+                android:onClick="operatorInput"
+                android:text="*"
+                android:textSize="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/clear"
+                android:onClick="clearInput"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/cero"
+                android:onClick="numberInput"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/igual"
+                android:onClick="equalInput"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/div"
+                android:onClick="operatorInput"
+                android:text="/"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
